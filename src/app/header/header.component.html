@@ -1,12 +1,21 @@
-<nav class="navbar navbar-expand-lg justify-content-between transparent fixed-top">
-    <div class="container">
+<nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <div class="container justify-content-between">
+
+
+
         <div class="navbar-brand">
             <a href="#" class="font-weight-bold">POFO
                 <span class="star">*</span>
             </a>
         </div>
 
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler mt-2" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
+        <div class="collapse navbar-collapse dropdown-list" id="collapse_target">
             <ul class="navbar-nav text-white align-items-center text-uppercase small">
                 <li class="nav-item">
                     <a href="" class="nav-link active">Home</a>
@@ -26,6 +35,10 @@
                 <li class="nav-item">
                     <a href="" class="nav-link">Features</a>
                 </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav text-white align-items-center small search-menu">
                 <li class="nav-item text-secondary">|</li>
                 <li class="nav-item">
                     <a href="" class="nav-link">
@@ -39,6 +52,7 @@
                 </li>
             </ul>
         </div>
+
 
     </div>
 </nav>
